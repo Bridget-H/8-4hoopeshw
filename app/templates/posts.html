@@ -1,0 +1,12 @@
+<h4>Title Here:</h4>
+
+<form action="" method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <fieldset>
+            {{ form.text.label }}
+            {{ form.text(class='form-control', placeholder='text') }}
+         </fieldset>
+        {{ form.submit(class='btn btn-primary') }}
+    </div>
+</form>
